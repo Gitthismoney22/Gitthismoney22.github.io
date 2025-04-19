@@ -1,0 +1,39 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #911e1e;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#logo {
+  height: 40px;
+  margin-right: 20px;
+}
+#languageToggle {
+  margin-left: auto;
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #911e1e;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+nav button {
+  padding: 6px;
+  font-size: 0.9rem;
+}
+main {
+  padding: 20px;
+}
+footer {
+  padding: 20px;
+  background: #f2f2f2;
+}
