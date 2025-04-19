@@ -1,99 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Malquerida Seafood Bar and Grill</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Malquerida Menu</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/icons/logo.png" alt="La Malquerida Logo">
-        </div>
-        <div class="language-toggle">
-            🌐 <button id="toggle-language">ENGLISH / ESPAÑOL</button>
-        </div>
-    </header>
-
-    <nav id="sticky-nav">
-        <button onclick="scrollToSection('drinks')">🥤 Drinks</button>
-        <button onclick="scrollToSection('seafood')">🍤 Seafood</button>
-        <button onclick="scrollToSection('appetizers')">🍽️ Appetizers</button>
-        <button onclick="scrollToSection('snacks')">🍟 Tasty Snacks</button>
-        <button onclick="scrollToSection('specialmenu')">🍛 Special Food Menu</button>
-        <button onclick="scrollToSection('specialdishes')">🍽️ Special Dishes</button>
-        <button onclick="scrollToSection('burritosmeats')">🌯 Burritos & Meats</button>
-        <button onclick="scrollToSection('torres')">🍤 Torres</button>
+  <header>
+    <img src="assets/logo.png" alt="La Malquerida Logo" />
+    <button id="lang-toggle">🌐 ENGLISH / ESPAÑOL</button>
+    <nav class="sticky-nav">
+      <button onclick="scrollToSection('drinks')">🥤 Drinks</button>
+      <button onclick="scrollToSection('seafood')">🦞 Seafood</button>
+      <button onclick="scrollToSection('appetizers')">🍤 Appetizers</button>
+      <button onclick="scrollToSection('snacks')">🌮 Tasty Snacks</button>
+      <button onclick="scrollToSection('special-food')">🍽️ Special Food Menu</button>
+      <button onclick="scrollToSection('special-dishes')">🍴 Special Dishes</button>
+      <button onclick="scrollToSection('burritos-meats')">🌯 Burritos & Meats</button>
+      <button onclick="scrollToSection('torres')">🧂 Torres</button>
     </nav>
+  </header>
 
-    <main>
-        <section id="drinks">
-            <h2>Drinks</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="seafood">
-            <h2>Seafood</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="appetizers">
-            <h2>Appetizers</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="snacks">
-            <h2>Tasty Snacks</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="specialmenu">
-            <h2>Special Food Menu</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="specialdishes">
-            <h2>Special Dishes</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="burritosmeats">
-            <h2>Burritos & Meats</h2>
-            <div class="item-grid"></div>
-        </section>
-        <section id="torres">
-            <h2>Torres</h2>
-            <div class="item-grid"></div>
-        </section>
+  <main>
+    <section id="drinks"><h2>Drinks</h2></section>
+    <section id="seafood"><h2>Seafood</h2></section>
+    <section id="appetizers"><h2>Appetizers</h2></section>
+    <section id="snacks"><h2>Tasty Snacks</h2></section>
+    <section id="special-food"><h2>Special Food Menu</h2></section>
+    <section id="special-dishes"><h2>Special Dishes</h2></section>
+    <section id="burritos-meats"><h2>Burritos & Meats</h2></section>
+    <section id="torres"><h2>Torres</h2></section>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <!-- Placeholder gallery images -->
-            </div>
-        </section>
-    </main>
+    <section id="contact">
+      <h2>Gallery</h2>
+      <p><strong>Phone:</strong> <a href="tel:5094052646">509-405-2646</a></p>
+      <p><strong>Email:</strong> <a href="mailto:jacksongrealestate@gmail.com">jacksongrealestate@gmail.com</a></p>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps?q=107+Vista+Way,+Kennewick,+WA+99336" target="_blank">
+          107 Vista Way, Kennewick, WA 99336
+        </a>
+      </p>
 
-    <footer>
-        <div class="contact-info">
-            <p><strong>Phone:</strong> <a href="tel:+15094052646">509-405-2646</a></p>
-            <p><strong>Email:</strong> <a href="mailto:jacksongrealestate@gmail.com">jacksongrealestate@gmail.com</a></p>
-            <p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&query=107+Vista+Way,+Kennewick,+WA+99336" target="_blank">107 Vista Way, Kennewick, WA 99336</a></p>
-        </div>
-        <div class="hours">
-            <h3>Hours of Operation</h3>
-            <ul>
-                <li>Sunday: 10 AM – 12 AM (Monday)</li>
-                <li>Monday: 10 AM – 12 AM (Tuesday)</li>
-                <li>Tuesday: 10 AM – 12 AM (Wednesday)</li>
-                <li>Wednesday: 10 AM – 12 AM (Thursday)</li>
-                <li>Thursday: 10 AM – 2 AM (Friday)</li>
-                <li>Friday: 10 AM – 2 AM (Saturday)</li>
-                <li>Saturday: 10 AM – 2 AM (Sunday)</li>
-            </ul>
-        </div>
-        <div class="socials">
-            <p>Follow us on social media</p>
-            <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
-        </div>
-    </footer>
+      <h3>Hours of Operation</h3>
+      <ul>
+        <li>Sunday: 10 AM – 12 AM (Monday)</li>
+        <li>Monday: 10 AM – 12 AM (Tuesday)</li>
+        <li>Tuesday: 10 AM – 12 AM (Wednesday)</li>
+        <li>Wednesday: 10 AM – 12 AM (Thursday)</li>
+        <li>Thursday: 10 AM – 2 AM (Friday)</li>
+        <li>Friday: 10 AM – 2 AM (Saturday)</li>
+        <li>Saturday: 10 AM – 2 AM (Sunday)</li>
+      </ul>
+
+      <div class="socials">
+        <p>Follow us on social media</p>
+        <img src="assets/facebook.png" alt="Facebook Icon" />
+        <img src="assets/instagram.png" alt="Instagram Icon" />
+      </div>
+    </section>
+  </main>
 </body>
 </html>
